@@ -54,3 +54,6 @@ const placeOrder = () => {
     document.getElementById('products').textContent = ''
     localStorage.removeItem('cart')
 }
+
+const url = document.getElementById("anchor");
+const path = url.pathname;
