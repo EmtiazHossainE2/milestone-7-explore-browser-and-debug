@@ -1,6 +1,9 @@
 const addItem = () => {
     const inputText = document.getElementById('input-value')
     const inputValue = inputText.value
+    if (!inputValue) {
+        return
+    }
     // display ui 
     displayProduct(inputValue)
     addProductToCart(inputValue)
@@ -28,8 +31,26 @@ const getCart = () => {
 }
 const addProductToCart = (product) => {
     const cart = getCart()
-    cart[product] = 1;
+    if (cart[product]) {
+        cart[product] = cart[product] + 1;
+    }
+    else {
+        cart[product] = 1;
+    }
     // console.log(cart);
     const cartStringify = JSON.stringify(cart)
     localStorage.setItem('cart', cartStringify)
+}
+
+const displayLocalStorageCart = () => {
+    const cart = getCart()
+    for (const product in cart) {
+        displayProduct(product)
+    }
+}
+displayLocalStorageCart()
+
+const placeOrder = () => {
+    document.getElementById('products').textContent = ''
+    localStorage.removeItem('cart')
 }
