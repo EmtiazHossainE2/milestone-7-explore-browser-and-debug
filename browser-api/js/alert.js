@@ -22,6 +22,6 @@ const sendMoney = () => {
         console.log('get 5000 tk');
     }
     else {
-        alert('hala dure gia mor.ulta palta tk dish kn')
+        prompt('Send Money 5000 for confirm your tour list')
     }
 }
