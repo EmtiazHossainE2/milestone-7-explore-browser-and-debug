@@ -67,8 +67,13 @@ const createSlider = () => {
   sliderContainer.appendChild(prevNext)
   document.querySelector('.main').style.display = 'block';
   // hide image aria
-  imagesArea.style.display = 'none';
+
   const duration = document.getElementById('duration').value || 1000;
+  if (duration < 0) {
+    alert('Please provide positive value ')
+    return
+  }
+  imagesArea.style.display = 'none';
   sliders.forEach(slide => {
     let item = document.createElement('div')
     item.className = "slider-item";
