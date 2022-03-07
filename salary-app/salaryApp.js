@@ -84,16 +84,17 @@ function addRecordHandler() {
   const name = inputName.value;
   const inputSalary = document.getElementById("salary");
   const salary = inputSalary.value;
-  inputName.value = ''
-  inputSalary.value = ''
-  if (!name || !salary) {
+
+  if (!name && !salary) {
+    console.log(name);
+    console.log(salary);
     showDataError(name, salary);
+    alert('! Opppsss , write  name & salary')
+    inputName.value = ''
+    inputSalary.value = ''
     return;
   }
-  // if ((name == '') || (salary == '')) {
-  //   alert('!Opppsss ,give write your name & salary')
-  //   return
-  // }
+
 
   addRecord(name, salary);
 }
@@ -143,38 +144,22 @@ const displayLastItemDialog = function (lastItem) {
   document.getElementById("showSalary").innerText = d3.format(",.0f")(
     lastItem.salary
   );
-  dlg.dialog({
-    buttons: {
-      Ok: function () {
-        $(this).dialog("close");
-      },
-    },
-  });
+
 };
 
 var showDataError = function (name, salary) {
   const dlg = document.getElementById("#dialog-error");
-  dlg.classList.remove("hide");
+
 
   toggleErrorMessage("#newName", name, "Who the hell you are talking about!");
   toggleErrorMessage("#newSalary", salary, "How much that guy make!");
 
-  dlg.dialog({
-    width: 600,
-    buttons: {
-      Ok: function () {
-        $(this).dialog("close");
-      },
-    },
-  });
+
 };
 
 function toggleErrorMessage(selector, value, msg) {
   if (value) {
     document.getElementById(selector + "line").style.display = "none";
-  } else {
-    document.getElementById(selector + "line").style.display = "block";
-    document.getElementById(selector).innerText = msg;
   }
 }
 
@@ -185,13 +170,7 @@ const showRecordCount = function (data) {
 
   document.getElementById("numberOfRecords").innerText = data.length;
 
-  dlg.dialog({
-    buttons: {
-      Ok: function () {
-        $(this).dialog("close");
-      },
-    },
-  });
+
 };
 
 const anotherRecordCountHandler = function anotherRecordCountHandler(e) {
