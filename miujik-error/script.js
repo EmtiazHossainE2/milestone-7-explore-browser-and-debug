@@ -70,5 +70,7 @@ const showAlbum = (data) => {
       `;
 
     albumContainer.appendChild(div);
+
   });
 };
+
