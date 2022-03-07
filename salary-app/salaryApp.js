@@ -80,13 +80,20 @@ const initialCountListener = function () {
 };
 
 function addRecordHandler() {
-  const name = document.getElementById("name").value;
-  const salary = document.getElementById("salary").value;
-
+  const inputName = document.getElementById("name");
+  const name = inputName.value;
+  const inputSalary = document.getElementById("salary");
+  const salary = inputSalary.value;
+  inputName.value = ''
+  inputSalary.value = ''
   if (!name || !salary) {
     showDataError(name, salary);
     return;
   }
+  // if ((name == '') || (salary == '')) {
+  //   alert('!Opppsss ,give write your name & salary')
+  //   return
+  // }
 
   addRecord(name, salary);
 }
