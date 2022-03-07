@@ -85,9 +85,7 @@ function addRecordHandler() {
   const inputSalary = document.getElementById("salary");
   const salary = inputSalary.value;
 
-  if (!name && !salary) {
-    console.log(name);
-    console.log(salary);
+  if (!name || !salary) {
     showDataError(name, salary);
     alert('! Opppsss , write  name & salary')
     inputName.value = ''
