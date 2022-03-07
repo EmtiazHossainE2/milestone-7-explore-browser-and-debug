@@ -13,7 +13,7 @@ const addBtn = () => {
     inputValue.value = ''
 }
 const displayItems = items => {
-    const ul = document.getElementById('addProducts')
+    const ul = document.getElementById('products')
     const li = document.createElement('li')
     li.innerText = items;
     ul.appendChild(li)
@@ -33,12 +33,19 @@ const getCart = () => {
 
 const addProductToCart = items => {
     const cart = getCart()
-    cart[items] = 1
+    // cart[items] = 1
+    if (cart[items]) {
+        cart[items] = cart[items] + 1;
+    }
+    else {
+        cart[items] = 1;
+    }
     // console.log(cart);
     const cartStringified = JSON.stringify(cart)
     localStorage.setItem('cart', cartStringified)
 
 }
+
 const displayLocatStorageCart = () => {
     const cart = getCart()
     for (const items in cart) {
@@ -46,3 +53,10 @@ const displayLocatStorageCart = () => {
     }
 }
 displayLocatStorageCart()
+
+
+//placeorder
+const placeOrder = () => {
+    document.getElementById('products').textContent = ''
+    localStorage.removeItem('cart')
+}
