@@ -1,13 +1,13 @@
 
-১. কিছু বই এর ছবি সহ কার্ড থাকবে।
+১. কিছু বই এর ছবি সহ কার্ড থাকবে। //Image(image hobe) deoya cilo jonne undefined dekhaicilo (done)
 
-২. কার্ডের মধ্যে লিখা থাকতেই হবে।
+২. কার্ডের মধ্যে লিখা থাকতেই হবে। //cool 
 
-৩. লেখা কার্ড এর বাইরে যাওয়া যাবেনা।
+৩. লেখা কার্ড এর বাইরে যাওয়া যাবেনা। //slice kore
 
-৪. wishlist এ আগে থেকে কার্ড এড হয়ে থাকছে। এটা হতে দেওয়া যাবেনা।
+৪. wishlist এ আগে থেকে কার্ড এড হয়ে থাকছে। এটা হতে দেওয়া যাবেনা। // booklist cilo hobe wishlist 
 
-৫. এক পেজ থেকে অন্য পেজে গেলে কার্ড এর সংখ্য বেড়ে যায়। এটা থামাতে হবে।
+৫. এক পেজ থেকে অন্য পেজে গেলে কার্ড এর সংখ্য বেড়ে যায়। এটা থামাতে হবে। // for each er age wishlist er innerHTML empty korle hoye jabe .
 
-৬. Add to cart কাজ করেনা।
+৬. Add to cart কাজ করেনা। //lol AddToCart likha cilo hobe addToCart .
 
