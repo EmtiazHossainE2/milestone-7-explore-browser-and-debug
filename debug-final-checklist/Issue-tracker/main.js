@@ -47,6 +47,9 @@ const deleteIssue = id => {
   remainingIssues.status = 'Delete';
   localStorage.setItem('issues', JSON.stringify(remainingIssues));
   fetchIssues();
+  //
+  const issueValue = document.getElementById('tracker-value')
+  issueValue.innerText = issues.length
 }
 
 const fetchIssues = () => {
