@@ -112,6 +112,17 @@ Building accessible sites benefit everyone:
     3.When the current function is finished, the interpreter takes it off the stack and resumes execution where it left off in the last code listing.
     4.If the stack takes up more space than it had assigned to it, it results in a "stack overflow" error.  */
 
+//৭. Regular এক্সপ্রেশন কি জিনিস এইটা কি কাজে লাগে?
+//রেগুলার এক্সপ্রেশন(Regular Expression) হল এমন একটা এক্সপ্রেশন যা ব্যবহার করে আমরা কোন স্ট্রিং(String) থেকে যা খুঁজছি সেটা বের করে আনতে পারি । যেমন ধরেন , "/shajal/" একটা রেগুলার এক্সপ্রেশন ।
+
+//৮. Lighthouse ট্যাব দিয়ে কি করে? 
+/* Lighthouse is an open-source, automated tool for improving the quality of web pages. You can run it against any web page, public or requiring authentication. It has audits for performance, accessibility, progressive web apps, SEO and more.
+
+You can run Lighthouse in Chrome DevTools, from the command line, or as a Node module. You give Lighthouse a URL to audit, it runs a series of audits against the page, and then it generates a report on how well the page did. From there, use the failing audits as indicators on how to improve the page. Each audit has a reference doc explaining why the audit is important, as well as how to fix it. */
+
+
+
+
 
 
 
