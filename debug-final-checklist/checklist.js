@@ -54,10 +54,10 @@ The Console Utilities API contains a collection of convenience functions for per
 */
 // To start profiling:
 
-profile("My profile")
+// profile("My profile")
 
 //To stop profiling and display the results in the Profiles panel:
-profileEnd("My profile")
+// profileEnd("My profile")
 
 /* 
 queryObjects(Constructor)
@@ -71,10 +71,42 @@ let names = [
     { firstName: "John", lastName: "Smith" },
     { firstName: "Jane", lastName: "Doe" },
 ];
-table(names);
+// table(names);
 //undebug(function)
 //unmonitor(function)
 //unmonitorEvents(window);
 //values(object) returns an array containing the values of all properties belonging to the specified object.
 
-values(object);
+// values(object);
+
+//২.কিভাবে বুঝবে একটা বাটনে কোন একটা ইভেন্ট হ্যান্ডলার যোগ করা আছে কিনা? সেটা ডেভ টুল এর কোন কোন জায়গায় দেখা যায়। চিন্তা করে বা ডেভ টুল খুলে বের করার চেষ্টা করো।  
+//element tab e right side e event listeners e thake . 
+const clickMe = () => {
+    console.log('clicked');
+}
+
+//৩.কিভাবে তুমি console ট্যাব-এর মধ্যে কোন একটা ফাংশনকে কল করে সেই ফাংশনের প্রথম লাইনে কোড ব্রেক করে ফেলবে। অর্থাৎ সেখানে গেলে কোড অটোমেটিক বন্ধ হয়ে যাবে।ক্লিক করে কোন ব্রেক পয়েন্ট যোগ করা লাগবে না?
+// debug(function)
+
+//৪. একটা কন্ডিশনাল ব্রেক পয়েন্ট সেট করতে হয় কিভাবে? সেটা নিজে নিজে সেট করে ফেলো (js expression)
+// source tab e jeikhane break korte chai oikhane right click kore edit kore condition dite parbo .
+
+//৫. accessibility কি জিনিস?
+/* Accessibility is the practice of making your websites usable by as many people as possible.We traditionally think of this as being about people with disabilities, but the practice of making sites accessible also benefits other groups such as those using mobile devices, or those with slow network connections.
+
+Accessibility is the right thing to do.Providing accessible sites is part of the law in some countries, which can open up some significant markets that otherwise would not be able to use your services or buy your products.
+
+Building accessible sites benefit everyone:
+
+1.Semantic HTML, which improves accessibility, also improves SEO, making your site more findable.
+2.Caring about accessibility demonstrates good ethics and morals, which improves your public image.
+3.Other good practices that improve accessibility also make your site more usable by other groups, such as mobile phone users or those on low network speed. In fact, everyone can benefit from many such improvements.
+
+*/
+
+
+
+
+
+
+
