@@ -17,12 +17,15 @@ const ValidateEmail = () => {
     let passformat = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
     if (emailAddr.match(mailformat) && passValue.match(passformat)) {
         // alert("Successfully Login!");
-        // document.getElementById('alert-info').textContent = ''
+        document.getElementById('alert-info').style.display = 'block'
+        document.getElementById('alert-info2').style.display = 'none'
         infoBox('alert-info', 'Successfully Login!')
         return true
     }
     else {
         // alert("You have entered an invalid email address! or password");
+        document.getElementById('alert-info2').style.display = 'block'
+        document.getElementById('alert-info').style.display = 'none'
         infoBox('alert-info2', 'Invalid email address! or password')
         return false;
     }
