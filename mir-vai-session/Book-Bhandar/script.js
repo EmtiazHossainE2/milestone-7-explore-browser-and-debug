@@ -136,7 +136,6 @@ const addToWishlist = (id) => {
 
 const displayCart = () => {
   const cart = getCartItems();
-  // console.log(cart);
   document.getElementById("cart").innerHTML = ''
 
   cart.forEach((book) => {
@@ -147,7 +146,6 @@ const displayCart = () => {
 
 const displayWishlist = () => {
   const wishlist = getWishlistItems();
-  // console.log(wishlist);
   document.getElementById("wishlist").innerHTML = ''
 
   wishlist.forEach((book) => {
