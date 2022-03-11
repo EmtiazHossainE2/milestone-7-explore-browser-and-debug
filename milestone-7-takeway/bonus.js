@@ -34,18 +34,34 @@ localStorage and sessionStorage are web storage objects that allow key / value p
 এই মাইলস্টোন থেকে তুমি যদি আরো দশটা জিনিস এ খেয়াল রাখতে চাও তাহলে সেগুলা হবে। 
 
 ১. What is JavaScript সেটা গুগলে সার্চ দিয়ে একটু দেখে নাও। 
+
     JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)
 
 ২. setTimeout এবং setInterval কিভাবে কাজ করে। এই দুইটার মধ্যে ডিফারেন্স কি ? 
+
     setTimeout() Execute a specific block of code once after a specified time has elapsed. setInterval() Execute a specified block of code repeatedly with a fixed time delay between each call.
 
-৩. history api কিভাবে ইউজ করে 
+৩. history api কিভাবে ইউজ করে  
+
+    The DOM Window object provides access to the browser's session history (not to be confused for WebExtensions history) through the history object. It exposes useful methods and properties that let you navigate back and forth through the user's history, and manipulate the contents of the history stack .
+
+    https://developer.mozilla.org/en-US/docs/Web/API/History_API
 
 ৪. alert, prompt, confirm এই তিনটা এর মধ্যে ডিফারেন্স কি। কখন কোনটা ইউজ করতে হয়। সেই জিনিসগুলা একটু দেখে ফেলো। .
 
 ৫. গুগলে সার্চ দিয়ে devtool এর ডকুমেন্টেশন খুঁজে বের করে সেগুলা পড়া। 
 
 ৬. টাইপস্ক্রিপ্ট আর জাভাস্ক্রিপ্ট এর মধ্যে ডিফারেন্স কি কি 
+
+    TypeScript and JavaScript, there are many similarities. Both are employed to create interactive web pages. 
+    But in comparing TypeScript vs JavaScript, JavaScript is a lightweight, interpreted, dynamic language for web design. It is utilized in web app development for augmenting HTML web pages.
+    
+    Is your JS code hard to understand?
+    Tired of solving errors at compile-time?
+    Want to decrease code complexity and get code organization?
+    Then you might want to consider TypeScript.
+
+In contrast, TypeScript acts as a superset of JavaScript.This states that Typescript is JavaScript + some other traits.
 
 ৭. event loop লুপ কি জিনিস। এই রিলেটেড পুরা জিনিসটা আজকে অনেকেই বুঝবে না। তাও আরেকবার দেখে রাখবে। 
 
