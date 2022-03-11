@@ -26,6 +26,10 @@ When the web browser fetches data from an internet connected server, it uses a p
 ৪. ব্রাউজারে গিয়ে location API দিয়ে কিভাবে url এর ডিফারেন্ট পার্টস দেখানো যেতে পারে সেটা কিছুটা বুঝতে হবে। 
 
 
+৫. local storage আর session storage এর মধ্যে পার্থক্য কি। কখন কোনটা ইউজ করতে হয়। 
+
+localStorage and sessionStorage are web storage objects that allow key / value pairs to be stored in the browser. Local storage data is shared between different tabs and windows in the browser. It does not expire data even after browser restart and OS reboot. Close / open the browser or open the same page in a different window. You will see that you can access the data in the local storage. Or will move to the browser. We can get / set data in local storage as an object if we want. I can even delete data. sessionStorage exists only in the Browser Current tab. There will be separate storage on another tab of the same page.
+
 
 
 
