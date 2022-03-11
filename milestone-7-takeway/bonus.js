@@ -31,8 +31,29 @@ When the web browser fetches data from an internet connected server, it uses a p
 localStorage and sessionStorage are web storage objects that allow key / value pairs to be stored in the browser. Local storage data is shared between different tabs and windows in the browser. It does not expire data even after browser restart and OS reboot. Close / open the browser or open the same page in a different window. You will see that you can access the data in the local storage. Or will move to the browser. We can get / set data in local storage as an object if we want. I can even delete data. sessionStorage exists only in the Browser Current tab. There will be separate storage on another tab of the same page.
 
 
+এই মাইলস্টোন থেকে তুমি যদি আরো দশটা জিনিস এ খেয়াল রাখতে চাও তাহলে সেগুলা হবে। 
 
+১. What is JavaScript সেটা গুগলে সার্চ দিয়ে একটু দেখে নাও। 
+    JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)
 
+২. setTimeout এবং setInterval কিভাবে কাজ করে। এই দুইটার মধ্যে ডিফারেন্স কি ? 
+    setTimeout() Execute a specific block of code once after a specified time has elapsed. setInterval() Execute a specified block of code repeatedly with a fixed time delay between each call.
+
+৩. history api কিভাবে ইউজ করে 
+
+৪. alert, prompt, confirm এই তিনটা এর মধ্যে ডিফারেন্স কি। কখন কোনটা ইউজ করতে হয়। সেই জিনিসগুলা একটু দেখে ফেলো। .
+
+৫. গুগলে সার্চ দিয়ে devtool এর ডকুমেন্টেশন খুঁজে বের করে সেগুলা পড়া। 
+
+৬. টাইপস্ক্রিপ্ট আর জাভাস্ক্রিপ্ট এর মধ্যে ডিফারেন্স কি কি 
+
+৭. event loop লুপ কি জিনিস। এই রিলেটেড পুরা জিনিসটা আজকে অনেকেই বুঝবে না। তাও আরেকবার দেখে রাখবে। 
+
+৮. accessibility কি জিনিস?
+
+৯. call stack কি জিনিস? 
+
+১০. Regular এক্সপ্রেশন কি কাজে লাগে?
 
 
 
