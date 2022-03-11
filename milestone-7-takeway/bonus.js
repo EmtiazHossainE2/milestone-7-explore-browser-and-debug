@@ -89,9 +89,6 @@ In contrast, TypeScript acts as a superset of JavaScript.This states that Typesc
         4.If the stack takes up more space than it had assigned to it, it results in a "stack overflow" error.  
 
 ১০. Regular এক্সপ্রেশন কি কাজে লাগে? 
-
-
-
-
+    রেগুলার এক্সপ্রেশন(Regular Expression) হল এমন একটা এক্সপ্রেশন যা ব্যবহার করে আমরা কোন স্ট্রিং(String) থেকে যা খুঁজছি সেটা বের করে আনতে পারি । যেমন ধরেন , "/shajal/" একটা রেগুলার এক্সপ্রেশন ।
 
  */
