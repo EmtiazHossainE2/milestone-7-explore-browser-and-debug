@@ -65,11 +65,31 @@ In contrast, TypeScript acts as a superset of JavaScript.This states that Typesc
 
 ৭. event loop লুপ কি জিনিস। এই রিলেটেড পুরা জিনিসটা আজকে অনেকেই বুঝবে না। তাও আরেকবার দেখে রাখবে। 
 
-৮. accessibility কি জিনিস?
+    javascript single threaded, synchronised language। মানে হচ্ছে, আমাদের কোড যখন ব্রাউজারে রান হয় তখন ব্রাউজার ইঞ্জিন ফাইলের একবারে উপর থেকে কোড রিড করতে করতে নিচের দিকে নামে । যতক্ষণ না প্রথম লাইন কমপ্লিট হচ্ছে ততক্ষণ পরবর্তী লাইনে যাচ্ছে না। এতে দেখা যায় পারফরম্যান্সে সমস্যা হয়৷ কেননা কোনো লুপ বা জটিল কোনো কোড ফাইলের শুরুতে পড়ে বসলে নিচের কোড তখন অপেক্ষার প্রহর গুনতে থাকে আর দোয়া-দরুদ পড়তে থাকে, কখন উপরের কোড কমপ্লিট হবে, কখন তার কাছে আসবে। এই সমস্যা থেকে উত্তোলনের জন্য উদ্ভব হলো asynchronous function এর।
+    যখন কোনো async ফাইংশান কল করা হয় তখন ব্রাইজারের কাজ সাধারণের থেকে একটু বেড়ে যায়।
+    ব্রাউজার ইঞ্জিন তখন তিনটি প্রধান ভাগে ভাগ হয়ে যায়৷
+    প্রথম, call stack,
+    দ্বিতীয়, webapi,
+    এবং সর্বশেষ, callback queue.
+    call stack এর কাজ হচ্ছে যখন এখানে কোনো নরমাল function কল হবে তখন তাকে সরাসরি কনসোলে প্রিন্ট করে দিবে। কিন্তু যখন কোনো async function এখানে আসবে তখন সেই function কে web api এর কাছে পাঠিয়ে দিবে। web api তার কাজ শেষ করে পাঠিয়ে দিবে callback queue এর কাছে। তারপর callback queue এই function গুলোকে নিয়ে বসে থাকবে (কারণ সে একটু লেজি টাইপের)। ঠিক এখানেই event loop এর কাজ। event loop এর অবস্থান call stack আর callback queue এর মধ্যবর্তী স্থানে। সে কি করে, প্রথমে দেখে call stack এ কোনো চলমান বা নরমাল বা sync task আছে কিনা যদি থাকে তাহলে সে অপেক্ষায় থাকবে কিন্তু যদি না থাকে তাহলে সে callback queue এর কাছে যাবে এবং তারকাছে যে যে task বা function আছে সেগুলোকে সিরিয়াল ওয়াইজ callback queue থেকে call stack এর কাছে পাঠিয়ে দিবে। এবং যতগুলো task আছে সবগুলোকে loop করে করে call stack এর কাছে পাঠাবে এজন্যই মুলত এটাকে event loop বলা হয়। আর শেষে call stack তার ডিউটি অনুযায়ী আউটপুট প্রিন্ট করবে।
+
+৮. accessibility কি জিনিস? 
+    Accessibility is the practice of making your websites usable by as many people as possible. We traditionally think of this as being about people with disabilities, but the practice of making sites accessible also benefits other groups such as those using mobile devices, or those with slow network connections.
+    Semantic HTML, which improves accessibility, also improves SEO, making your site more findable.
+    Caring about accessibility demonstrates good ethics and morals, which improves your public image.
+    Other good practices that improve accessibility also make your site more usable by other groups, such as mobile phone users or those on low network speed. In fact, everyone can benefit from many such improvements.
 
 ৯. call stack কি জিনিস? 
+    call stack এর কাজ হচ্ছে যখন এখানে কোনো নরমাল function কল হবে তখন তাকে সরাসরি কনসোলে প্রিন্ট করে দিবে। 
+    A call stack is a mechanism for an interpreter (like the JavaScript interpreter in a web browser) to keep track of its place in a script that calls multiple functions — what function is currently being run and what functions are called from within that function, etc.
 
-১০. Regular এক্সপ্রেশন কি কাজে লাগে?
+        1.When a script calls a function, the interpreter adds it to the call stack and then starts carrying out the function.
+        2.Any functions that are called by that function are added to the call stack further up, and run where their calls are reached.
+        3.When the current function is finished, the interpreter takes it off the stack and resumes execution where it left off in the last code listing.
+        4.If the stack takes up more space than it had assigned to it, it results in a "stack overflow" error.  
+
+১০. Regular এক্সপ্রেশন কি কাজে লাগে? 
+
 
 
 
