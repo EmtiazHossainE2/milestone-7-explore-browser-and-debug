@@ -23,7 +23,8 @@ When the web browser fetches data from an internet connected server, it uses a p
             4. com    ->  top-level domain
             5. dashboard -> subdirectory
 
-৪. ব্রাউজারে গিয়ে location API দিয়ে কিভাবে url এর ডিফারেন্ট পার্টস দেখানো যেতে পারে সেটা কিছুটা বুঝতে হবে। 
+৪. ব্রাউজারে গিয়ে location API দিয়ে কিভাবে url এর ডিফারেন্ট পার্টস দেখানো যেতে পারে সেটা কিছুটা বুঝতে হবে । 
+
 
 
 ৫. local storage আর session storage এর মধ্যে পার্থক্য কি। কখন কোনটা ইউজ করতে হয়। 
